@@ -1682,6 +1682,7 @@ class FunkinLua {
 			case 'smootherstepin': return FlxEase.smootherStepIn;
 			case 'smootherstepinout': return FlxEase.smootherStepInOut;
 			case 'smootherstepout': return FlxEase.smootherStepOut;
+			case 'looping': return FlxEase.Looping;
 		}
 		return FlxEase.linear;
 	}
@@ -1857,5 +1858,6 @@ class DebugLuaText extends FlxText
 			destroy();
 		}
 		else if(disableTime < 1) alpha = disableTime;
+		
 	}
 }
