@@ -1682,7 +1682,6 @@ class FunkinLua {
 			case 'smootherstepin': return FlxEase.smootherStepIn;
 			case 'smootherstepinout': return FlxEase.smootherStepInOut;
 			case 'smootherstepout': return FlxEase.smootherStepOut;
-			case 'looping': return FlxEase.looping;
 		}
 		return FlxEase.linear;
 	}
