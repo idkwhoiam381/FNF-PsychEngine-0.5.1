@@ -37,10 +37,7 @@ jobs:
       - name: Setup Haxe
         uses: krdlab/setup-haxe@master
         with:
-          haxe-version: 4.2.0
-
-      - name: Clear Haxelib cache
-        run: rm -rf $HOME/.haxelib/tmp
+          haxe-version: 4.3.6
 
       - name: Install Haxelibs
         run: |
