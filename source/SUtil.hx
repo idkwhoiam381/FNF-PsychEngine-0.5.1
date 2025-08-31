@@ -12,10 +12,10 @@ import openfl.utils.Assets as OpenFlAssets;
 import openfl.Lib;
 
 #if android
-import android.Hardware;
-import android.Permissions;
-import android.os.Build.VERSION;
-import android.os.Environment;
+import extension.androidtools.os.Build.HARDWARE;
+import extension.androidtools.Permissions;
+import extension.androidtools.os.Build.VERSION;
+import extension.androidtools.os.Environment;
 #end
 
 #if sys
