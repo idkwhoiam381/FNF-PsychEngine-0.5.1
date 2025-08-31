@@ -1,11 +1,5 @@
 package;
 
-#if android
-import android.Hardware;
-import android.Permissions;
-import android.os.Build.VERSION;
-import android.os.Environment;
-#end
 import flash.system.System;
 import flixel.FlxG;
 import flixel.util.FlxStringUtil;
@@ -16,8 +10,18 @@ import lime.app.Application;
 import openfl.events.UncaughtErrorEvent;
 import openfl.utils.Assets as OpenFlAssets;
 import openfl.Lib;
-import sys.FileSystem;
+
+#if android
+import android.Hardware;
+import android.Permissions;
+import android.os.Build.VERSION;
+import android.os.Environment;
+#end
+
+#if sys
 import sys.io.File;
+import sys.FileSystem;
+#end
 
 /**
  * ...
