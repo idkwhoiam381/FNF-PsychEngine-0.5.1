@@ -41,8 +41,8 @@ jobs:
 
       - name: Install Haxelibs
         run: |
-          haxelib --quiet install lime 7.9.0
-          haxelib --quiet install openfl 9.1.0
+          haxelib --quiet install lime 7.8.0
+          haxelib --quiet install openfl 9.0.0
           haxelib --quiet install hxcpp 4.2.1 > /dev/null
           haxelib --quiet --never install flixel 4.11.0
           haxelib --quiet --always run lime setup flixel
