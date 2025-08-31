@@ -26,13 +26,13 @@ jobs:
         uses: nttld/setup-ndk@main
         id: setup-ndk
         with:
-          ndk-version: r15c
+          ndk-version: r21e
 
       - name: Setup Java JDK
         uses: actions/setup-java@main
         with:
           distribution: 'zulu'
-          java-version: '8'
+          java-version: '11'
 
       - name: Setup Haxe
         uses: krdlab/setup-haxe@master
@@ -51,6 +51,7 @@ jobs:
           haxelib git linc_luajit https://github.com/PsychExtendedThings/linc_luajit.git --quiet
           haxelib git extension-androidtools https://github.com/Prohack101010/extension-androidtools-2.git --quiet
           haxelib list
+
       - name: Create Version Tag
         run: echo "${{github.run_id}}" > VERSION
 
